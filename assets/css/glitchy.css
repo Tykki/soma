@@ -23,11 +23,11 @@
     color: #ff00ff;
     z-index: -2;
   }
-  .glitch:hover:before, .glitch:active:before {
+  .glitch:hover:before {
     -webkit-animation: glitchy 0.4s ease 0.4s infinite;
             animation: glitchy 0.4s ease 0.4s infinite;
   }
-  .glitch:hover:after, .glitch:active:after {
+  .glitch:hover:after {
     animation: glitchy 0.6s ease infinite reverse;
   }
 
