@@ -1,0 +1,45 @@
+@media screen and (min-width: 425px) {
+  #splash{
+    height: 44rem !important;
+  }
+}
+@media screen and (min-width: 480px) {
+  #navbar{
+    margin: 12px auto 0 auto;
+  }
+    .title h2 {
+      font-size: 9em;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #splash{
+      height: 45rem !important;
+    }
+    #fullNav {
+      display: inline-block;
+      width: 100%;
+    }
+    #menuNav{
+        display: none;
+    }
+    .logo{
+      max-width: 169px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+  body{
+    overflow: hidden;
+
+  }
+  #splash{
+    height: 86vh !important;
+  }
+  #navbar{
+    font-size: 24px;
+  }
+  #fullNav a.glitch{
+    margin-right: 32px;
+  }
+}
