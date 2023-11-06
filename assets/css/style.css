@@ -2,6 +2,7 @@
 @import 'glowWave.css';
 @import 'trapdoor.css';
 @import 'nav.css';
+@import 'slice.css';
 @import 'responsive.css';
 
 :root {
@@ -12,29 +13,70 @@
 body {
   background-color: black;
   margin: 0;
+	color: white;
 }
 
-#app{
-  overflow: hidden;
-}
+
 .logo{
 	max-width: 140px;
   float: right;
 }
-#bckgrd{
-  z-index: -1;
-  left: 10px;
-  right: 10px;
-  margin: 0 auto 0 auto;
-  position: absolute;
+#splash-img{
+  	z-index: -1;
+	top: 80px;
+  	margin: 0 auto 0 auto;
+	width: 100%;
+	max-height: 740px;
+  	position: absolute;
+	animation: colorRotate 3s linear infinite;
 }
+
+.logo {
+/*	animation: colorRotate 3s linear infinite;*/
+  }
+  
+  @keyframes colorRotate {
+	100% {
+	  -webkit-filter: hue-rotate(360deg);
+	}
+  }
+
+
 #splash{
-	display: block;
   width: 100%;
   height: 45.8rem;
   contain: content;
-  /* margin: 0 auto 0 auto; */
-	/* justify-content: center; */
 	font-family: "Poppins", sans-serif;
-	/* padding-top: 20%; */
+}
+
+#event{
+	width: 80%;
+	contain: content;
+	margin: 0 auto 0 auto;
+	text-align: center;
+}
+
+#artist{
+	width: 80%;
+	contain: content;
+	margin: 0 auto 0 auto;
+	text-align: center;
+}
+
+#testi{
+	width: 80%;
+	contain: content;
+	margin: 0 auto 0 auto;
+	text-align: center;
+}
+
+#gallery{
+	width: 80%;
+	contain: content;
+	margin: 0 auto 0 auto;
+	text-align: center;
+}
+
+.hide{
+	display: none;
 }

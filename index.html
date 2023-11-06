@@ -19,7 +19,7 @@
             A fake / hidden checkbox is used as click reciever,
             so you can use the :checked selector on it.
             -->
-            <input type="checkbox" />
+            <input id="close" type="checkbox" />
             
             <!--
             Some spans to act as a hamburger.
@@ -63,57 +63,73 @@
           </ul>
         </nav>
       </header>
-      <main style id="splash">
+      <main id="splash">
+        <img src="assets/imgs/deer.svg" id="splash-img" />
         <div class="title">
-          <a href="#event">
+          <a href="#event" id="homeLink">
             <h2>Soma</h2>
             <h2>Soma</h2>
           </a>
         </div>
-        <css-doodle id="bckgrd">
-          <style>
-            @grid: 50x1 / 50vmin;
-            :container {
-              perspective: 23vmin;
-            }
-            background: @m(
-              @r(200, 240), 
-              radial-gradient(
-                @p(purple, gold, #f6416c, #ffde7d) 15%,
-                transparent 50%
-              ) @r(100%) @r(100%) / @r(1%, 3%) @lr no-repeat
-            );
-        
-            @size: 80%;
-            @place-cell: center;
-        
-            border-radius: 50%;
-            transform-style: preserve-3d;
-            animation: scale-up 20s linear infinite;
-            animation-delay: calc(@i * -.4s);
-        
-            @keyframes scale-up {
-              0% {
-                opacity: 0;
-                transform: translate3d(0, 0, 0) rotate(0);
-              }
-              10% { 
-                opacity: 1; 
-              }
-              95% {
-                transform:
-                  translate3d(0, 0, @r(50vmin, 55vmin))
-                  rotate(@r(-360deg, 360deg));
-              }
-              100% {
-                opacity: 0;
-                transform: translate3d(0, 0, 1vmin);
-              }
-            }
-          </style>
-        </css-doodle>
-        
-        <footer id="footer">
+      </main>
+
+	  <main class="hide" id="event">
+			<!-- <img src="" alt="" class="placeholder-img"> -->
+      <section class="slice" data-offset="10">
+        <div class="slice-item" data-offset="20" onclick>
+          What is Soma?
+          <span class="Mask"><span>What is Soma?</span></span>
+          <span class="Mask"><span>What is Soma?</span></span>
+        </div>
+      </section>
+			<p>
+				First Paragraph is the introduction of event
+			</p>
+		  <p>
+		  	History behind mushrooms and enlightenment
+		  </p>
+		  <p>
+		  	Reason for deer and drink from them
+		  </p>
+		  <p>
+		  	Event details and pricing
+		  </p>
+		</main>
+
+    <main class="hide" id="artist">
+        <section class="slice" data-offset="10">
+          <div class="slice-item" data-offset="20" onclick>
+            Meet The Artist
+            <span class="Mask"><span>Meet The Artist</span></span>
+            <span class="Mask"><span>Meet The Artist</span></span>
+          </div>
+        </section>
+    
+			
+		</main>
+    <main class="hide" id="testi">
+      <section class="slice" data-offset="10">
+        <div class="slice-item" data-offset="20" onclick>
+          What People Are Saying
+          <span class="Mask"><span>What People Are Saying</span></span>
+          <span class="Mask"><span>What People Are Saying</span></span>
+        </div>
+      </section>
+			
+		</main>
+		<main class="hide" id="gallery">
+      <section class="slice" data-offset="10">
+        <div class="slice-item" data-offset="20" onclick>
+          Take A Closer Look
+          <span class="Mask"><span>Take A Closer Look</span></span>
+          <span class="Mask"><span>Take A Closer Look</span></span>
+        </div>
+      </section>
+			
+		</main>
+      
+		
+		<footer id="footer">
           <div class="trapdoor">
             <div class="top door">
             </div>
@@ -122,9 +138,9 @@
             <a href="https://Etchie.dev" class="inner-content">Etchie Development</a>
           </div>
         </footer>
-      </main>
+		
     </div>
-    <script type="module" src="/assets/js/app.js"></script>
-    <script src="https://unpkg.com/css-doodle@0.17.2/css-doodle.min.js"></script>
+	  <script type="text/javascript" src="assets/js/app.js"></script>
+<!--    <script type="module" src="/assets/js/app.js"></script>-->
   </body>
 </html>

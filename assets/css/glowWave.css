@@ -10,6 +10,8 @@
 	position: absolute;
     right: 0;
     left: 0;
+	margin: 0 auto 0 auto;
+	width: fit-content;
 }
 
 .title h2:nth-child(1) {
