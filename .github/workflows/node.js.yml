@@ -35,10 +35,6 @@ jobs:
       run: npm i
     - name: Build Process
       run: npm run build
-  deploy:
-    runs-on: ubuntu-latest
-
-    steps:
     - name: Setup Pages
       uses: actions/configure-pages@v3
     - name: Upload artifact
