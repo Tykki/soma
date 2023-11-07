@@ -35,6 +35,13 @@ jobs:
       run: npm i
     - name: Build Process
       run: npm run build
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+
+    steps:
     - name: Setup Pages
       uses: actions/configure-pages@v3
     - name: Upload artifact
