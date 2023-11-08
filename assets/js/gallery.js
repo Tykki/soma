@@ -1,5 +1,5 @@
-import './../../public/ang.min.js';
-import './../../public/ani.min.js';
+// import './../../public/ang.min.js';
+// import './../../public/ani.min.js';
 
 var app = angular.module('app', ['ngAnimate'])
 
