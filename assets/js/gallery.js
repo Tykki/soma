@@ -1,3 +1,5 @@
+import 'https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js'
+import 'https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-animate.min.js'
 var app = angular.module('app', ['ngAnimate'])
 
 app.controller('galleryCtrl', function($scope) {
