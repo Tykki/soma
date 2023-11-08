@@ -1,9 +1,9 @@
-// import './../../public/ang.min.js';
-// import './../../public/ani.min.js';
+import 'https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js'
+import 'https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-animate.min.js'
 
 var app = angular.module('app', ['ngAnimate'])
 
-app.controller('mainCtrl', function($scope) {
+app.controller('galleryCtrl', ['$scope', function($scope) {
 	$scope.boxes = [{
 		name: 'Friends',
 		image: 'https://source.unsplash.com/uAgLGG1WBd4/900x900'
@@ -53,7 +53,7 @@ app.controller('mainCtrl', function($scope) {
 	$scope.clearSelection = function() {
 		$scope.selected = [];
 	}
-})
+}])
 
 app.directive('box', function() {
 	return {
@@ -80,7 +80,7 @@ app.directive('box', function() {
 	}
 })
 
-app.directive('bigBox', function($timeout) {
+app.directive('bigBox', ['$timeout', function($timeout) {
 	return {
 		restrict: 'AE',
 		scope: {},
@@ -121,4 +121,4 @@ app.directive('bigBox', function($timeout) {
 			}, 800)
 		}
 	}
-})
+}])

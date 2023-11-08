@@ -1,5 +1,3 @@
-import 'https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js'
-import 'https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-animate.min.js'
 import './gallery'
 console.log(window.location.hash);
 const splashPage = document.querySelector('#splash')
