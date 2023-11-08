@@ -1,3 +1,4 @@
+import './gallery'
 console.log(window.location.hash);
 const splashPage = document.querySelector('#splash')
 const eventPage = document.querySelector('#event')

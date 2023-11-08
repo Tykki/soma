@@ -3,6 +3,7 @@
 @import 'trapdoor.css';
 @import 'nav.css';
 @import 'slice.css';
+@import 'gallery.css';
 @import 'responsive.css';
 
 :root {
@@ -71,7 +72,7 @@ body {
 }
 
 #gallery{
-	width: 80%;
+	width: 100%;
 	contain: content;
 	margin: 0 auto 0 auto;
 	text-align: center;
