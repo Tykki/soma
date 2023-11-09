@@ -12,7 +12,8 @@
 }
 
 body {
-  background-color: black;
+	background-color: black;
+  background-image: radial-gradient(circle, rgba(0,0,0,0) 60%, rgba(227,142,33,.4));
   margin: 0;
 	color: white;
 }
@@ -51,7 +52,7 @@ body {
 }
 
 #event{
-	width: 80%;
+	width: 60%;
 	contain: content;
 	margin: 0 auto 0 auto;
 	text-align: center;
