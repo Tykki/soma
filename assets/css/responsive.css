@@ -14,9 +14,12 @@
 }
 
 @media screen and (min-width: 768px) {
-    #splash{
-/*      height: 45rem !important;*/
-    }
+  .grid-container {
+    grid-template-columns: 70% auto !important;
+  }
+  .card-wrapper {
+    grid-template-columns: auto auto;
+  }
 	#splash-img{
     top: 0px !important;
 		width: 140% !important;
@@ -38,9 +41,11 @@
 }
 
 @media screen and (min-width: 1024px) {
-  body{
-/*    overflow: hidden;*/
-
+  .card-wrapper {
+    grid-template-columns: auto auto auto;
+  }
+  .card:last-child{
+    grid-column: 2/3;
   }
   #splash{
 /*    height: 86vh !important;*/
@@ -50,5 +55,18 @@
   }
   #fullNav a.glitch{
     margin-right: 32px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .card-wrapper {
+    grid-template-columns: auto auto auto auto;
+  }
+  .card{
+    height: 500px;
+    max-width: 400px;
+  }
+  .card:last-child{
+    grid-column: auto;
   }
 }

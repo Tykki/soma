@@ -10,36 +10,75 @@
 </head>
 <body>
 
-<div class="container" ng-class="{'no-scroll': selected.length}" ng-app="app" ng-controller="mainCtrl">
-	<div class="page">
-		<div class="grid">
-			<div class="grid-item" ng-repeat="item in boxes">
-				<box class="box" item="item" on-select="selectBox" ng-class="{'selected': selected[0].item.name == item.name}"></box>
-			</div>
-		</div>
-	</div>
-	<div class="fullscreen-background top-up" ng-show="selected.length" ng-style="{'background-image': 'url(' + selected[0].item.image + ')'}"></div>
-	<div class="scroller" ng-show="selected.length">
-		<a class="close-button" ng-click="clearSelection()">
-			<i class="material-icons">close</i>
-		</a>
-		<h1>{{selected[0].item.name}}</h1>
-		<div big-box ng-repeat="item in selected" class="box on-top" position="item.position" selected="item.item">
-			<img ng-src="{{item.item.image}}" alt="" />
-			<div class="content">
-				<h2>Lorem ipsum dolor</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime laborum perferendis, ullam minus. Illo ad aliquid ab magni, enim nesciunt at consequuntur dolores explicabo nisi. Dolor, reiciendis suscipit alias nemo.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus consequatur, sit saepe reprehenderit nisi dolorem, voluptates amet quos ab assumenda non id accusamus, dicta soluta laboriosam voluptas fuga sint deleniti. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam officiis minus tenetur ex molestias qui possimus sit facilis dolorum suscipit. Cumque, aperiam inventore nobis? Veniam voluptatibus sapiente ea, voluptate dolores?</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur dicta ducimus ratione reiciendis officia odit omnis distinctio, eveniet et modi fuga nisi voluptatem nihil aliquam ex pariatur possimus repudiandae vero?</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, quos ducimus nobis. Necessitatibus provident impedit, neque quia dolores? Quas, architecto id. Iure distinctio, illum eaque at quia assumenda modi saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero soluta quisquam autem quasi ut ex ab modi. Sit soluta dicta incidunt quaerat tenetur fugiat, natus perspiciatis illo. Totam, quo, minus.</p>
-			</div>
-		</div>
+	<section class="card-wrapper">
 		
-	</div>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js" integrity="sha512-+wvMk2/lFJe3WajOeKMN704Z0AoCJYQ0WxIoKHBTJ2QCDqo34ErxaiHkWxL5laEK7QcPAsCMTHZp0edtJEu7/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-animate.min.js"></script>
-<!-- <script src="https://codepen.io/steveg3003/pen/zBVakw.js"></script> -->
+		<!-- BEGIN: card -->
+		<div class="card" data-effect="zoom">
+			<section class="card__face ">
+				<figure  class="card__image">
+				  <img src="https://c1.staticflickr.com/4/3935/32253842574_d3d449ab86_c.jpg" alt="Short description">
+				</figure>
+				<div class="card__header">
+				  </figure>
+				  <h3 class="card__name">Experience</h3>
+				</div>
+				<div class="card__body">
+				  <p class="card__bio"> A night to never forget anytime soon!</p>
+				</div>
+			</section>
+			<section class="card__face card__face--back">
+				<p class="card__bio"> A night to never forget anytime soon!</p>
+			</section>
+		</div>
+		<!-- END: card -->
+
+		<!-- BEGIN: card -->
+		<div class="card" data-effect="blur">
+			<figure  class="card__image">
+			  <img src="https://c1.staticflickr.com/4/3935/32253842574_d3d449ab86_c.jpg" alt="Short description">
+			</figure>
+			<div class="card__header">
+			  </figure>
+			  <h3 class="card__name">Experience</h3>
+			</div>
+			<div class="card__body">
+			  <p class="card__bio"> A night to never forget anytime soon!</p>
+			</div>
+		  </div>
+		  <!-- END: card -->
+
+		  <!-- BEGIN: card -->
+		<div class="card" data-effect="color">
+			<figure  class="card__image">
+			  <img src="https://c1.staticflickr.com/4/3935/32253842574_d3d449ab86_c.jpg" alt="Short description">
+			</figure>
+			<div class="card__header">
+			  </figure>
+			  <h3 class="card__name">Experience</h3>
+			</div>
+			<div class="card__body">
+			  <p class="card__bio"> A night to never forget anytime soon!</p>
+			</div>
+		  </div>
+		  <!-- END: card -->
+
+		  <!-- BEGIN: card -->
+		<div class="card" data-effect="blur">
+			<figure  class="card__image">
+			  <img src="https://c1.staticflickr.com/4/3935/32253842574_d3d449ab86_c.jpg" alt="Short description">
+			</figure>
+			<div class="card__header">
+			  </figure>
+			  <h3 class="card__name">Experience</h3>
+			</div>
+			<div class="card__body">
+			  <p class="card__bio"> A night to never forget anytime soon!</p>
+			</div>
+		  </div>
+		  <!-- END: card -->
+		  
+		
+	  </section>
 <script src="./test.js"></script>
 </body>
 </html>

@@ -4,6 +4,7 @@
 @import 'nav.css';
 @import 'slice.css';
 @import 'gallery.css';
+@import 'cards.css';
 @import 'responsive.css';
 
 :root {
@@ -16,6 +17,8 @@ body {
   background-image: radial-gradient(circle, rgba(0,0,0,0) 60%, rgba(227,142,33,.4));
   margin: 0;
 	color: white;
+	-webkit-font-smoothing: subpixel-antialiased;
+    font-smoothing: subpixel-antialiased;
 }
 
 
@@ -31,6 +34,10 @@ body {
 	max-height: 740px;
   	position: absolute;
 	animation: colorRotate 3s linear infinite;
+}
+
+#app{
+	overflow: hidden;
 }
 
 .logo {
@@ -52,7 +59,7 @@ body {
 }
 
 #event{
-	width: 60%;
+	width: 100%;
 	contain: content;
 	margin: 0 auto 0 auto;
 	text-align: center;
@@ -64,6 +71,30 @@ body {
 	margin: 0 auto 0 auto;
 	text-align: center;
 }
+
+.grid-container {
+	margin-top: 20px;
+	display: grid;
+	gap: 10px;
+	grid-template-columns: auto;
+  }
+  
+#artist .grid-item {
+	text-align: center;
+	font-size: 30px;
+	contain: content;
+}
+
+#artist img {
+	width: 100%;
+}
+  .item1 {
+	
+  }
+  
+  .item2 {
+	background-color: purple;
+  }
 
 #testi{
 	width: 80%;

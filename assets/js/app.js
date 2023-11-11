@@ -9,6 +9,14 @@ const navLinks = document.querySelectorAll('#menu a')
 const navBar = document.querySelectorAll('a.glitch')
 const test = document.querySelector('#homeLink')
 
+var cards = document.querySelectorAll('.card');
+
+[...cards].forEach((card)=>{
+  card.addEventListener( 'click', function() {
+    card.classList.toggle('is-flipped');
+  });
+});
+
 const hide = () => {
 	splashPage.classList.add('hide')
 	eventPage.classList.add('hide')
