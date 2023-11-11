@@ -5,6 +5,7 @@
 @import 'slice.css';
 @import 'gallery.css';
 @import 'cards.css';
+@import 'rolodex.css';
 @import 'responsive.css';
 
 :root {
@@ -98,6 +99,7 @@ body {
 
 #testi{
 	width: 80%;
+	height: 1000px;
 	contain: content;
 	margin: 0 auto 0 auto;
 	text-align: center;
