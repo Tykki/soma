@@ -4,43 +4,56 @@ import 'https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-animate.
 var app = angular.module('app', ['ngAnimate'])
 
 app.controller('galleryCtrl', ['$scope', function($scope) {
-	$scope.boxes = [{
+	$scope.boxes = [
+	{
 		name: 'Friends',
 		image: 'https://www.designboom.com/cms/images/anita04/carsten13.jpg'
-	},{
+	},
+	{
 		name: 'Free',
-		image: 'https://source.unsplash.com/Cp-LUHPRpWM/900x900'
-	},{
+		image: 'https://static.designboom.com/cms/images/anita04/carsten25.jpg'
+	},
+	{
 		name: 'Explore',
-		image: 'https://source.unsplash.com/7BjmDICVloE/900x900'
-	}, {
-		name: 'Vast',
-		image: 'https://source.unsplash.com/WLUHO9A_xik/900x900'
-	}, {
+		image: 'https://static.designboom.com/cms/images/anita04/carsten24.jpg'
+	},
+	// {
+	// 	name: 'Vast',
+	// 	image: 'https://static.designboom.com/cms/images/anita04/carsten19.jpg'
+	// },
+	{
 		name: 'Playful',
-		image: 'https://source.unsplash.com/b2-fBVrfx0o/900x900'
-	}, {
+		image: 'https://static.designboom.com/cms/images/anita04/carsten02.jpg'
+	},
+	{
 		name: 'Grand',
-		image: 'https://source.unsplash.com/Ixp4YhCKZkI/900x900'
-	}, {
+		image: 'https://static.designboom.com/cms/images/anita04/carsten05.jpg'
+	},
+	{
 		name: 'Mist',
-		image: 'https://source.unsplash.com/8BmNurlVR6M/900x900'
-	}, {
-		name: 'Sea',
-		image: 'https://source.unsplash.com/6YqpFWWQsno/900x900'
-	}, {
-		name: 'Reach',
-		image: 'https://source.unsplash.com/zFnk_bTLApo/900x900'
-	}, {
+		image: 'https://static.designboom.com/cms/images/anita04/carsten08.jpg'
+	},
+	// {
+	// 	name: 'Sea',
+	// 	image: 'https://static.designboom.com/cms/images/anita04/carsten12.jpg'
+	// },
+	// {
+	// 	name: 'Reach',
+	// 	image: 'https://static.designboom.com/cms/images/anita04/carsten15.jpg'
+	// },
+	{
 		name: 'Awe',
-		image: 'https://source.unsplash.com/j4PaE7E2_Ws/900x900'
-	}, {
+		image: 'https://static.designboom.com/cms/images/anita04/carsten03.jpg'
+	},
+	{
 		name: 'Surf',
-		image: 'https://source.unsplash.com/uohGiEVhWiQ/900x900'
-	}, {
+		image: 'https://static.designboom.com/cms/images/anita04/carsten21.jpg'
+	},
+	{
 		name: 'Thrill',
-		image: 'https://source.unsplash.com/ssrbaKvxaos/900x900'
-	}, ];
+		image: 'https://static.designboom.com/cms/images/anita04/carsten20.jpg'
+	},
+ ];
 
 	$scope.selected = [];
 	$scope.selectBox = function(item, position) {
