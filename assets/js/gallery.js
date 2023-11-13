@@ -6,52 +6,64 @@ var app = angular.module('app', ['ngAnimate'])
 app.controller('galleryCtrl', ['$scope', function($scope) {
 	$scope.boxes = [
 	{
-		name: 'Friends',
-		image: 'https://www.designboom.com/cms/images/anita04/carsten13.jpg'
+		name: 'Soma \u00A9 Designboom',
+		image: 'https://www.designboom.com/cms/images/anita04/carsten13.jpg',
+		data: 'Twelve male castrated reindeer'
 	},
 	{
-		name: 'Free',
-		image: 'https://static.designboom.com/cms/images/anita04/carsten25.jpg'
+		name: 'Soma \u00A9 Designboom',
+		image: 'https://static.designboom.com/cms/images/anita04/carsten25.jpg',
+		data: 'View from the bed'
 	},
 	{
-		name: 'Explore',
-		image: 'https://static.designboom.com/cms/images/anita04/carsten24.jpg'
-	},
-	// {
-	// 	name: 'Vast',
-	// 	image: 'https://static.designboom.com/cms/images/anita04/carsten19.jpg'
-	// },
-	{
-		name: 'Playful',
-		image: 'https://static.designboom.com/cms/images/anita04/carsten02.jpg'
-	},
-	{
-		name: 'Grand',
-		image: 'https://static.designboom.com/cms/images/anita04/carsten05.jpg'
-	},
-	{
-		name: 'Mist',
-		image: 'https://static.designboom.com/cms/images/anita04/carsten08.jpg'
+		name: 'Soma \u00A9 Designboom',
+		image: 'https://static.designboom.com/cms/images/anita04/carsten24.jpg',
+		data: 'Elevator bed'
 	},
 	// {
-	// 	name: 'Sea',
-	// 	image: 'https://static.designboom.com/cms/images/anita04/carsten12.jpg'
+	// 	name: 'Soma \u00A9 Designboom',
+	// 	image: 'https://static.designboom.com/cms/images/anita04/carsten19.jpg',
+	// 	data: ''
+	// },
+	{
+		name: 'Soma \u00A9 Designboom',
+		image: 'https://static.designboom.com/cms/images/anita04/carsten02.jpg',
+		data: 'Reindeer resting near the clock'
+	},
+	{
+		name: 'Soma \u00A9 Designboom',
+		image: 'https://static.designboom.com/cms/images/anita04/carsten05.jpg',
+		data: 'Dried and Fresh mushrooms stored within the fridge'
+	},
+	{
+		name: 'Soma \u00A9 Designboom',
+		image: 'https://static.designboom.com/cms/images/anita04/carsten08.jpg',
+		data: 'Reindeer urine is also stored within the fridge'
+	},
+	// {
+	// 	name: 'Soma \u00A9 Designboom',
+	// 	image: 'https://static.designboom.com/cms/images/anita04/carsten12.jpg',
+	// 	data: ''
 	// },
 	// {
-	// 	name: 'Reach',
-	// 	image: 'https://static.designboom.com/cms/images/anita04/carsten15.jpg'
+	// 	name: 'Soma \u00A9 Designboom',
+	// 	image: 'https://static.designboom.com/cms/images/anita04/carsten15.jpg',
+	// 	data: ''
 	// },
 	{
-		name: 'Awe',
-		image: 'https://static.designboom.com/cms/images/anita04/carsten03.jpg'
+		name: 'Soma \u00A9 Designboom',
+		image: 'https://static.designboom.com/cms/images/anita04/carsten03.jpg',
+		data: 'Eight freezer cubes are found within a laboratory setting'
 	},
 	{
-		name: 'Surf',
-		image: 'https://static.designboom.com/cms/images/anita04/carsten21.jpg'
+		name: 'Soma \u00A9 Designboom',
+		image: 'https://static.designboom.com/cms/images/anita04/carsten21.jpg',
+		data: 'Details in mushrooms'
 	},
 	{
-		name: 'Thrill',
-		image: 'https://static.designboom.com/cms/images/anita04/carsten20.jpg'
+		name: 'Soma \u00A9 Designboom',
+		image: 'https://static.designboom.com/cms/images/anita04/carsten20.jpg',
+		data: 'Double mushroom clock'
 	},
  ];
 

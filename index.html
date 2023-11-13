@@ -209,81 +209,81 @@
 			<div class='rolodex-wrapper'>
         <div class='carousel'>
           <div class='carousel__item'>
-          <div class='carousel__item-head'>
+          <!-- <div class='carousel__item-head'>
             🐳
-          </div>
+          </div> -->
           <div class='carousel__item-body'>
             <p>When you enter you think it's giant and spectacular, and it is, but I think what Carsten Hoeller is getting at is very personal and intimate</p>
             <p class='title'>Curator Dorothee Brill</p>
           </div>
           </div>
           <div class='carousel__item'>
-          <div class='carousel__item-head'>
+          <!-- <div class='carousel__item-head'>
             🐋
-          </div>
+          </div> -->
           <div class='carousel__item-body'>
             <p>I wasn't going to go and drink six bottles of reindeer urine to find out</p>
             <p class='title'>Tanja Klein, 28, won a competition</p>
           </div>
           </div>
           <div class='carousel__item'>
-          <div class='carousel__item-head'>
+          <!-- <div class='carousel__item-head'>
             🐬
-          </div>
+          </div> -->
           <div class='carousel__item-body'>
             <p>I'm not into drugs, I'm into art.</p>
             <p class='title'>Sachar Kriwoj, 30</p>
           </div>
           </div>
           <div class='carousel__item'>
-          <div class='carousel__item-head'>
+          <!-- <div class='carousel__item-head'>
             🐟
-          </div>
+          </div> -->
           <div class='carousel__item-body'>
             <p>It is a moment when one is not quite awake, but in a state in-between," he said. "I love to look at art in such a moment — art then appears more clear to me.</p>
             <p class='title'>Carsten Höller</p>
           </div>
           </div>
           <div class='carousel__item'>
-          <div class='carousel__item-head'>
+          <!-- <div class='carousel__item-head'>
             🐠
-          </div>
+          </div> -->
           <div class='carousel__item-body'>
             <p>you throw up. The first four times I tried it, I became comatose. Then you wake up, throw up, and you don't know where you are, or how long you've been asleep. The sixth time, I started to chant like a Tibetan monk</p>
             <p class='title'>Carsten Höller</p>
           </div>
           </div>
           <div class='carousel__item'>
-          <div class='carousel__item-head'>
+          <!-- <div class='carousel__item-head'>
             🐡
-          </div>
+          </div> -->
           <div class='carousel__item-body'>
             <p>It's a piece of poetry, not academic documentation.</p>
             <p class='title'>Curator Dorothee Brill</p>
           </div>
           </div>
           <div class='carousel__item'>
-          <div class='carousel__item-head'>
+          <!-- <div class='carousel__item-head'>
             🦈
-          </div>
+          </div> -->
           <div class='carousel__item-body'>
             <p>The bed was comfortable, but we were too excited to sleep</p>
             <p class='title'>Businesswoman Maru Winnacker and her husband</p>
           </div>
           </div>
           <div class='carousel__item'>
-          <div class='carousel__item-head'>
+          <!-- <div class='carousel__item-head'>
             🐙
-          </div>
+          </div> -->
           <div class='carousel__item-body'>
             <p>"It wasn't a night like any other night,"</p>
             <p class='title'>Belgian-born Hoeller</p>
           </div>
           </div>
           <div class='carousel__item'>
-          <div class='carousel__item-head'>
+          <!-- <div class='carousel__item-head'>
             🐚
-          </div>
+          </div> -->
           <div class='carousel__item-body'>
             <p>It was wonderful to wander about the artworks with flashlights and walkie-talkies. You can observe so much more at night than during the day</p>
             <p class='title'>Businesswoman Maru Winnacker</p>
@@ -312,17 +312,13 @@
         <div class="fullscreen-background top-up" ng-show="selected.length" ng-style="{'background-image': 'url(' + selected[0].item.image + ')'}"></div>
         <div class="scroller" ng-show="selected.length">
           <a class="close-button" ng-click="clearSelection()">
-            <i class="material-icons">close</i>
+            <i class="material-icons">&times;</i>
           </a>
           <h1>{{selected[0].item.name}}</h1>
           <div big-box ng-repeat="item in selected" class="box on-top" position="item.position" selected="item.item">
             <img ng-src="{{item.item.image}}" alt="" />
             <div class="content">
-              <h2>Lorem ipsum dolor</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime laborum perferendis, ullam minus. Illo ad aliquid ab magni, enim nesciunt at consequuntur dolores explicabo nisi. Dolor, reiciendis suscipit alias nemo.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus consequatur, sit saepe reprehenderit nisi dolorem, voluptates amet quos ab assumenda non id accusamus, dicta soluta laboriosam voluptas fuga sint deleniti. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam officiis minus tenetur ex molestias qui possimus sit facilis dolorum suscipit. Cumque, aperiam inventore nobis? Veniam voluptatibus sapiente ea, voluptate dolores?</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur dicta ducimus ratione reiciendis officia odit omnis distinctio, eveniet et modi fuga nisi voluptatem nihil aliquam ex pariatur possimus repudiandae vero?</p>
-              <p>Lorem ipsum dolor sit amet, con sectetur adipisicing elit. Corporis, quos ducimus nobis. Necessitatibus provident impedit, neque quia dolores? Quas, architecto id. Iure distinctio, illum eaque at quia assumenda modi saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero soluta quisquam autem quasi ut ex ab modi. Sit soluta dicta incidunt quaerat tenetur fugiat, natus perspiciatis illo. Totam, quo, minus.</p>
+              <h2>{{selected[0].item.data}}</h2>
             </div>
           </div>
           
@@ -345,11 +341,6 @@
     </footer>
 		
     </div>
-    <!-- <script type="module" src="./ang.min.js"></script> -->
-    <!-- <script type="module" src="./ani.min.js"></script> -->
-    <!-- <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
-    <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-animate.min.js"></script> -->
 	  <script type="module" src="assets/js/app.js"></script>
-<!--    <script type="module" src="/assets/js/app.js"></script>-->
   </body>
 </html>
