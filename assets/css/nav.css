@@ -9,8 +9,8 @@
 #nav-logo{
   text-align: center;
   float: left;
-display: inline-block;
-width: 15%;
+  margin-left: 15px;
+  width: 15%;
 }
 #fullNav ul{
   /* margin: 0 auto 0 auto; */

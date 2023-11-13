@@ -52,6 +52,7 @@
     transform-style: preserve-3d;
     transform-origin: center right;
     contain: content;
+    overflow-y: scroll;
   }
 
   .card.is-flipped {
