@@ -3,6 +3,9 @@
   #splash-img{
     top: 25px !important;
   }
+  .card {
+    height: 400px;
+  }
 }
 @media screen and (min-width: 480px) {
   #navbar{
