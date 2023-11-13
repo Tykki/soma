@@ -182,6 +182,7 @@
     opacity: 0;
     -webkit-transition: all var(--speed) ease;
     transition: all var(--speed) ease;
+    overflow: scroll;
   }
   
   .card:hover .card__bio {
