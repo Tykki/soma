@@ -51,6 +51,7 @@
     transition: all var(--speed) ease;
     transform-style: preserve-3d;
     transform-origin: center right;
+    contain: content;
   }
 
   .card.is-flipped {
@@ -182,7 +183,6 @@
     opacity: 0;
     -webkit-transition: all var(--speed) ease;
     transition: all var(--speed) ease;
-    overflow: scroll;
   }
   
   .card:hover .card__bio {
