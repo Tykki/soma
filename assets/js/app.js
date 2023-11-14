@@ -1,4 +1,5 @@
 import './gallery'
+import './carousel'
 console.log(window.location.hash);
 const splashPage = document.querySelector('#splash')
 const eventPage = document.querySelector('#event')
@@ -35,13 +36,8 @@ navLinks.forEach((link)=>{
 	})
 })
 
-test.addEventListener('click', () => {
-	console.log('ello world')
-})
-
 
 const hashHandler = (hash) => {
-   console.log('step 2', hash)
    if (!hash) {
 	return
    }

@@ -26,7 +26,7 @@ body {
 	
 }
 
-p{
+p, blockquote{
 	font-family: 'Raleway', sans-serif;
 }
 
@@ -69,7 +69,7 @@ p{
 }
 
 #event{
-	width: 100%;
+	width: 95%;
 	contain: content;
 	margin: 0 auto 0 auto;
 	text-align: center;
@@ -113,12 +113,37 @@ p{
 	margin: 0 auto 0 auto;
 	text-align: center;
 }
+#testi blockquote:before,
+#testi blockquote:after {
+  content: "\201c";
+  position: absolute;
+  font-size: 80px;
+  line-height: 1;
+  font-family: 'Times New Roman', Times, serif;
+  /* color: #757f9a; */
+  font-style: normal;
+}
+
+#testi blockquote:before {
+  top: 0;
+  left: 10px;
+}
+
+#testi blockquote:after {
+  content: "\201d";
+  right: 20px;
+}
 
 #gallery{
 	width: 100%;
 	contain: content;
 	margin: 0 auto 0 auto;
 	text-align: center;
+}
+
+#gallery .scroller{
+	color: #30B5F2;
+	text-shadow: 1px -1px 5px black;
 }
 
 .hide{
