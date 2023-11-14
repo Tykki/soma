@@ -13,6 +13,10 @@
     justify-content: center;
     flex-direction: column;
   }
+
+.carousel:hover .carousel__item{
+	animation-play-state: paused;
+}
   
   .carousel__item {
     display: flex;

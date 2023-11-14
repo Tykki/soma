@@ -8,6 +8,8 @@
 @import 'rolodex.css';
 @import 'responsive.css';
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway');
+
 :root {
   --shadow-color: #c19bf5;
   --shadow-color-light: rgba(0,0,0, 1);
@@ -15,11 +17,17 @@
 
 body {
 	background-color: black;
-  background-image: radial-gradient(circle, rgba(0,0,0,0) 60%, rgba(227,142,33,.4));
+/*	 rgba(227,142,33,.4)*/
+  background-image: radial-gradient(circle, rgba(0,0,0,0) 60%, rgba(99,193,50,.4));
   margin: 0;
 	color: white;
 	-webkit-font-smoothing: subpixel-antialiased;
     font-smoothing: subpixel-antialiased;
+	
+}
+
+p{
+	font-family: 'Raleway', sans-serif;
 }
 
 
@@ -39,6 +47,7 @@ body {
 
 #app{
 	overflow: hidden;
+	
 }
 
 .logo {
