@@ -3,8 +3,8 @@
   #splash-img{
     top: 25px !important;
   }
-  .card {
-    /* height: 400px; */
+  .parallax-text-last{
+    margin-bottom: 0px !important;
   }
 }
 @media screen and (min-width: 480px) {
@@ -50,6 +50,12 @@
     .rolodex-wrapper{
       height: 85%;
     }
+    .parallax-wrapper p{
+      font-size: 30px !important;
+    }
+    .item2{
+      font-size: 16px !important;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -68,6 +74,15 @@
   #fullNav a.glitch{
     margin-right: 32px;
   }
+  .parallax-text-last{
+    padding-top: 40px !important;
+  }
+  .parallax-wrapper p{
+    font-size: 36px !important;
+  }
+  .item2{
+    font-size: 21px !important;
+  }
 }
 
 @media screen and (min-width: 1400px) {
@@ -80,5 +95,8 @@
   }
   .card:last-child{
     grid-column: auto;
+  }
+  .item2{
+    font-size: 30px !important;
   }
 }

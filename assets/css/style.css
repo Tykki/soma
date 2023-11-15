@@ -69,17 +69,79 @@ p, blockquote{
 }
 
 #event{
-	width: 95%;
+	width: 100%;
 	contain: content;
 	margin: 0 auto 0 auto;
 	text-align: center;
 }
+
+#event a{
+	color: #ff00ff;
+	text-decoration: none;
+	font-weight: bold;
+}
+#lore{
+	width: 100%;
+	contain: content;
+	margin: 0 auto 0 auto;
+	text-align: center;
+}
+#agaric{
+	width: 100%;
+	contain: content;
+	margin: 0 auto 0 auto;
+	text-align: center;
+}
+.parallax-wrapper{
+	width: 95%;
+	margin: 10px auto;
+}
+.parallax {
+	/* The image used */
+	
+  
+	/* Full height */
+	height: 400px; 
+  
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  }
+.parallax-text{
+	padding-top: 200px;
+	font-size: 3em;
+	text-shadow: 4px -2px 10px #ff00ff;
+}
+.parallax-text-last{
+	margin-bottom: -25px;
+	padding-top: 10px;
+}
+.parallax a{
+	color: #ff00ff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.parallax-wrapper p{
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-bottom: 2%;
+	background-color:transparent;
+	font-size: 24px
+  }
 
 #artist{
 	width: 80%;
 	contain: content;
 	margin: 0 auto 0 auto;
 	text-align: center;
+}
+#artist a{
+	color: #ff00ff;
+	text-decoration: none;
+	font-weight: bold;
 }
 
 .grid-container {
@@ -91,7 +153,6 @@ p, blockquote{
   
 #artist .grid-item {
 	text-align: center;
-	font-size: 30px;
 	contain: content;
 }
 
@@ -103,8 +164,15 @@ p, blockquote{
   }
   
   .item2 {
-	background-color: purple;
+	font-size: 24px;
   }
+
+#works{
+	width: 100%;
+	contain: content;
+	margin: 0 auto 0 auto;
+	text-align: center;
+}
 
 #testi{
 	width: 80%;

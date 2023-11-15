@@ -1,6 +1,6 @@
 import './gallery'
 import './carousel'
-console.log(window.location.hash);
+import './cards'
 const splashPage = document.querySelector('#splash')
 const eventPage = document.querySelector('#event')
 const artistPage = document.querySelector('#artist')
@@ -8,7 +8,9 @@ const testiPage = document.querySelector('#testi')
 const galleryPage = document.querySelector('#gallery')
 const navLinks = document.querySelectorAll('#menu a')
 const navBar = document.querySelectorAll('a.glitch')
-const test = document.querySelector('#homeLink')
+const lore = document.querySelector('#lore')
+const agaric = document.querySelector('#agaric')
+const works = document.querySelector('#works')
 
 var cards = document.querySelectorAll('.card');
 
@@ -21,6 +23,9 @@ var cards = document.querySelectorAll('.card');
 const hide = () => {
 	splashPage.classList.add('hide')
 	eventPage.classList.add('hide')
+  lore.classList.add('hide')
+  agaric.classList.add('hide')
+  works.classList.add('hide')
 	artistPage.classList.add('hide')
 	testiPage.classList.add('hide')
 	galleryPage.classList.add('hide')
@@ -45,13 +50,22 @@ const hashHandler = (hash) => {
    navBar.forEach(link => link.getAttribute('href') === hash ? link.classList.add('active'): false)
 	if (hash === "#event"){
 		eventPage.classList.remove('hide')
+	} else if (hash === "#lore"){
+		lore.classList.remove('hide')
+	} else if (hash === "#agaric"){
+		agaric.classList.remove('hide')
 	} else if (hash === "#artist"){
 		artistPage.classList.remove('hide')
+	} else if (hash === "#works"){
+		works.classList.remove('hide')
 	} else if (hash === "#testi"){
 		testiPage.classList.remove('hide')
 	} else if (hash === "#gallery"){
 		galleryPage.classList.remove('hide')
-	}
+	} else {
+    location.hash = ''
+    location.reload()
+  }
 }
 
 window.addEventListener('hashchange', (e) => hashHandler(e.target.location.hash))
