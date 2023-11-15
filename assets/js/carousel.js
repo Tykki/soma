@@ -1,4 +1,5 @@
-const carousel = document.querySelector('.carousel')
+const testiPage = document.querySelector('#testi')
+
 const testimonials = [
     {
         name: 'Curator Dorothee Brill',
@@ -37,6 +38,26 @@ const testimonials = [
         quote: 'It was wonderful to wander about the artworks with flashlights and walkie-talkies. You can observe so much more at night than during the day'
     },
 ]
+
+
+testiPage.innerHTML = 
+`
+    <section class="slice" data-offset="10">
+        <div class="slice-item" data-offset="20" onclick>
+            What People Are Saying
+            <span class="Mask"><span>What People Are Saying</span></span>
+            <span class="Mask"><span>What People Are Saying</span></span>
+        </div>
+    </section>
+    <div class='rolodex-wrapper'>
+        <div class='carousel'>
+          
+        </div>
+    </div>
+`
+
+const carousel = document.querySelector('.carousel')
+
 
 testimonials.forEach(q =>{
     carousel.innerHTML += `

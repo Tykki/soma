@@ -1,4 +1,4 @@
-const cardWrap = document.querySelector('.card-wrapper')
+const eventPage = document.querySelector('#event')
 const cards = [
     {
         img: 'https://images.unsplash.com/photo-1593073504904-998854918849?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
@@ -29,6 +29,20 @@ const cards = [
         details: 'To embark on this journey is completely up to choice, then up to chance if choosing to do so. During the day, the urine is collected by handlers and locked in fridges by the walls. These fridges also hold both dried and fresh fly agaric mushrooms <i>(Amanita muscaria)</i>. At night-time though for the over night guests, the fridges are opened, allowing for sampling of the contents. The twist is that none of the urine is labeled, and only half of the reindeer have ingested the mushrooms, each bottle holding a 50% chance of triggering a Soma experience. This journey is one of science, art, and nature; taking you from an observer and into the art piece itself. By the morning, taking the Soma experience or not, it will be night not to forget anytime soon.'
     },
 ]
+
+
+eventPage.innerHTML = `
+    <section class="slice" data-offset="10">
+        <div class="slice-item" data-offset="20" onclick>
+            What is Soma?
+            <span class="Mask"><span>What is Soma?</span></span>
+            <span class="Mask"><span>What is Soma?</span></span>
+        </div>
+    </section>
+    <section class="card-wrapper"></section>
+`
+
+const cardWrap = document.querySelector('.card-wrapper')
 
 cards.forEach(c => {
     cardWrap.innerHTML += `

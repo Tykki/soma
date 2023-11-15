@@ -1,7 +1,43 @@
 import 'https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js'
 import 'https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-animate.min.js'
+const galleryPage = document.querySelector('#gallery')
 
-var app = angular.module('app', ['ngAnimate'])
+galleryPage.innerHTML = 
+ `
+ <section class="slice" data-offset="10">
+ <div class="slice-item" data-offset="20" onclick>
+   Take A Closer Look
+   <span class="Mask"><span>Take A Closer Look</span></span>
+   <span class="Mask"><span>Take A Closer Look</span></span>
+ </div>
+</section>
+	 
+<div class="container" ng-class="{'no-scroll': selected.length}" ng-app="app" ng-controller="galleryCtrl">
+ <div class="page">
+   <div class="grid">
+	 <div class="grid-item" ng-repeat="item in boxes">
+	   <box class="box" item="item" on-select="selectBox" ng-class="{'selected': selected[0].item.name == item.name}"></box>
+	 </div>
+   </div>
+ </div>
+ <div class="fullscreen-background top-up" ng-show="selected.length" ng-style="{'background-image': 'url(' + selected[0].item.image + ')'}"></div>
+ <div class="scroller" ng-show="selected.length">
+   <a class="close-button" ng-click="clearSelection()">
+	 <i class="material-icons">&times;</i>
+   </a>
+   <h1>{{selected[0].item.name}}</h1>
+   <div big-box ng-repeat="item in selected" class="box on-top" position="item.position" selected="item.item">
+	 <img ng-src="{{item.item.image}}" alt="" />
+	 <div class="content">
+	   <p>{{selected[0].item.data}}</p>
+	 </div>
+   </div>
+   
+ </div>
+</div>
+ `
+
+const app = angular.module('app', ['ngAnimate'])
 
 app.controller('galleryCtrl', ['$scope', function($scope) {
 	$scope.boxes = [
@@ -66,6 +102,8 @@ app.controller('galleryCtrl', ['$scope', function($scope) {
 		data: 'Double mushroom clock'
 	},
  ];
+
+
 
 	$scope.selected = [];
 	$scope.selectBox = function(item, position) {

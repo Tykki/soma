@@ -1,16 +1,17 @@
 import './gallery'
 import './carousel'
-import './cards'
-const splashPage = document.querySelector('#splash')
+import './eventPage'
+import './agaric'
+import './lore'
+import './works'
+import './artist'
 const eventPage = document.querySelector('#event')
 const artistPage = document.querySelector('#artist')
+const splashPage = document.querySelector('#splash')
 const testiPage = document.querySelector('#testi')
 const galleryPage = document.querySelector('#gallery')
 const navLinks = document.querySelectorAll('#menu a')
 const navBar = document.querySelectorAll('a.glitch')
-const lore = document.querySelector('#lore')
-const agaric = document.querySelector('#agaric')
-const works = document.querySelector('#works')
 
 var cards = document.querySelectorAll('.card');
 

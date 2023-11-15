@@ -80,6 +80,12 @@
   .parallax-wrapper p{
     font-size: 36px !important;
   }
+  #agaric .parallax p{
+    font-size: 35px !important;
+  }
+  #works .parallax p{
+    font-size: 32px !important;
+  }
   .item2{
     font-size: 21px !important;
   }
