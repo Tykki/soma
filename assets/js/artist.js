@@ -10,7 +10,7 @@ artistPage.innerHTML = `
         </div>
     </section>
     <section class="grid-container">
-        <div class="grid-item item1"><img src="./assets/imgs/CarstenHoller_©JohnScarisbrick_1300x975.jpg" alt=""></div>
+        <div class="grid-item item1"><img src="./assets/imgs/CarstenHoller_JohnScarisbrick.jpg" alt=""></div>
         <div class="grid-item item2">
         <p>
             Carsten Höller is a German-born artist who was actually born in Brussels, Belgium, in 1961. He initially studied agricultural sciences at the University of Kiel and later earned a Ph.D. in agricultural science also has a background in entomology (the study of insects). His scientific background has significantly influenced his artistic approach. <br />
