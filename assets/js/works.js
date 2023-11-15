@@ -53,7 +53,7 @@ data.forEach(d => {
                 <h2 class="parallax-text parallax-text-last">${d.title}</h2>
                 <p>
                     ${d.detail} <br/>
-                    <a href="${d.href}">${d.link}</a>
+                    <a href="${d.href}" target="_blank">${d.link}</a>
                 </p>
             </div>
         `
